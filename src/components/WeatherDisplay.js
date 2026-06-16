@@ -8,7 +8,7 @@ export default function WeatherDisplay(props) {
   return (
     <div>
       <p>
-        Temperature: <span style={{ color: tempColor }}>{temperature}°C</span>
+        Temperature: <span style={{ color: tempColor }}>{temperature}</span>
       </p>
       <p>
         Conditions: {conditions}
