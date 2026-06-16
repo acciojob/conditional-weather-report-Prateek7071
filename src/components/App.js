@@ -1,13 +1,17 @@
+import React, { useState } from 'react';
+import WeatherDisplay from './WeatherDisplay';
 
-import React from "react";
-import './../styles/App.css';
+export default function App() {
 
-const App = () => {
+  const [weatherData] = useState({
+    temperature: 25,
+    conditions: 'Sunny'
+  });
+
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div >
+      <h2>Weather Dashboard</h2>
+      <WeatherDisplay weather={weatherData} />
     </div>
-  )
+  );
 }
-
-export default App
